@@ -1,9 +1,15 @@
 package creation.abstract_factory.model;
 
 public interface Appliance {
-    void turnOn();
+    default String turnOn() {
+        return "Вмикаю " + this.getClass();
+    }
 
-    void use();
+    default String use() {
+        return "Користуюсь " + this.getClass();
+    }
 
-    void turnOff();
+    default String turnOff() {
+        return "Вимикаю" + this.getClass();
+    }
 }
