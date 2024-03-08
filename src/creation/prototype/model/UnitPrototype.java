@@ -1,6 +1,4 @@
-package creation.prototype;
-
-import creation.prototype.model.Unit;
+package creation.prototype.model;
 
 public interface UnitPrototype {
     Unit doClone() throws CloneNotSupportedException;

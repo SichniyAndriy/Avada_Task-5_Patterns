@@ -1,6 +1,5 @@
 package creation.prototype.model;
 
-import creation.prototype.UnitPrototype;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.AllArgsConstructor;
