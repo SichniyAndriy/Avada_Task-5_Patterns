@@ -1,11 +1,11 @@
 package creation.singletone.model;
 
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import net.datafaker.Faker;
 
-@Data
+@Getter
 @NoArgsConstructor
 public class Result {
-    private String result = new Faker().construction().materials();
+    private final String result = new Faker().construction().materials();
 }

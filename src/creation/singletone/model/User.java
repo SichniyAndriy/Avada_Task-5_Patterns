@@ -2,9 +2,7 @@ package creation.singletone.model;
 
 import creation.singletone.SingleUniqueTool;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 
-@Data
 @AllArgsConstructor
 public class User {
     private String name;
