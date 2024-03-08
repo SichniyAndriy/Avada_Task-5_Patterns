@@ -19,7 +19,7 @@ public class SeaLogisticCompany extends AbstractLogisticCompany {
     protected Transport buyTransport() {
         Faker faker = new Faker(Locale.getDefault());
         double payload = faker.random().nextDouble(1000., 10000.);
-        logger.info(" купила судно вантажопід'йомністю " + NumberFormat.getNumberInstance().format(payload));
+        logger.info(" переглядає судно вантажопід'йомністю " + NumberFormat.getNumberInstance().format(payload));
         return new SeaTransport(payload);
     }
 }
