@@ -24,16 +24,16 @@ public abstract class AbstractLogisticCompany implements LogisticCompany {
         logger.info("Нове замовлення вагою " + mass + ". Підшукуєм транспорт");
         Optional<Transport> transport = chooseTransport(mass);
         if (transport.isPresent()) {
-            logger.info(" знайшла транспорт");
+            logger.info("знайшла транспорт");
             makeDelivery(transport.get(), from, to);
         } else {
-            logger.info(" не знайшла транспорт. Йдемо на ринок транспорту");
+            logger.info("не знайшла транспорт. Йдемо на ринок транспорту");
             Transport newTransport;
             do {
                 newTransport = buyTransport();
             } while (newTransport.getPayload() < mass);
             transports.add(newTransport);
-            logger.info(" купила новий транспорт");
+            logger.info("купила новий транспорт");
             formOrder(mass, from, to);
         }
     }
@@ -41,7 +41,7 @@ public abstract class AbstractLogisticCompany implements LogisticCompany {
     @Override
     public void makeDelivery(Transport transport, String from, String to) {
         transport.followRoute(from, to);
-        logger.info(" завершив доставку");
+        logger.info("завершила доставку");
     }
 
     //Factory method allow to create certain type of transport depending of context

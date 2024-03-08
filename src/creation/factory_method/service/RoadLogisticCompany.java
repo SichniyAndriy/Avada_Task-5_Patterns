@@ -22,7 +22,7 @@ public final class RoadLogisticCompany extends AbstractLogisticCompany {
     protected Transport buyTransport() {
         Faker faker = new Faker(Locale.getDefault());
         double payload = faker.random().nextDouble(10., 40.);
-        logger.info(" переглядає ванжівку вантажопід'йомністю " + NumberFormat.getNumberInstance().format(payload));
+        logger.info("переглядає ванжівку вантажопід'йомністю " + NumberFormat.getNumberInstance().format(payload));
         return new RoadTransport(payload);
     }
 }

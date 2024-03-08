@@ -13,17 +13,17 @@ public abstract class Transport implements Transportable {
 
     @Override
     public void loadCargo() {
-        logger.info(" завантажується");
+        logger.info("завантажується");
     }
 
     @Override
     public void followRoute(String from, String to) {
         loadCargo();
-        logger.info(String.format(" cлідує маршрутом %s - %s", from, to));
+        logger.info(String.format("cлідує маршрутом %s - %s", from, to));
         unloadCargo();
     }
     @Override
     public void unloadCargo() {
-        logger.info(" розвавантажується");
+        logger.info("розвавантажується");
     }
 }
