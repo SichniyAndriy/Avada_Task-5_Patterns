@@ -1,6 +1,5 @@
 package structural.adapter;
 
-import java.util.Arrays;
 import java.util.Random;
 import structural.adapter.model.NetAdapter;
 import structural.adapter.model.RealCable;
