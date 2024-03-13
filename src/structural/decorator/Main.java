@@ -15,8 +15,10 @@ public class Main {
 
         CarDecorator carWithAlarms = new AlarmsCarDecorator(basicCar);
         showCar(carWithAlarms);
+
         CarDecorator carInMetallicWithAlarms = new MetallicColorCarDecorator(carWithAlarms);
         showCar(carInMetallicWithAlarms);
+
         CarDecorator carInMetallicWithCruiseAndAlarms = new CruiseControlCarDecorator(carInMetallicWithAlarms);
         showCar(carInMetallicWithCruiseAndAlarms);
     }
