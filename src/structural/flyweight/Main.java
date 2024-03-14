@@ -8,13 +8,16 @@ public class Main {
     private final static Random random = new Random();
 
     public static void main(String[] args) {
-        int len = random.nextInt(100_000, 250_000);
+        int len = random.nextInt(100_000, 500_000);
         SymbolsPool pool = new SymbolsPool();
         Symbol symbol;
         for (int i = 0; i < len; i++) {
             symbol = pool.getSymbol(
-                    (char) random.nextInt(97, 101), FontStyle.get(random.nextInt(FontStyle.values().length)).name(),
-                    random.nextInt(12, 19), FontColor.get(random.nextInt(FontColor.values().length)).name());
+                    (char) random.nextInt(97, 123),
+                    FontStyle.get(random.nextInt(FontStyle.values().length)).name(),
+                    random.nextInt(12, 19),
+                    FontColor.get(random.nextInt(FontColor.values().length)).name()
+            );
             symbol.draw();
         }
         System.out.println("Промальовано " + len + " символів");
