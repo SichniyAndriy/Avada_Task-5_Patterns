@@ -2,13 +2,12 @@ package structural.facade.model;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
 public class RealOnlineStore implements OnlineStore {
     private final OnlineStoreFacade onlineStoreFacade;
-    private List<Product> bucket;
+    private final List<Product> bucket;
 
     {
         onlineStoreFacade = new OnlineStoreFacade();
