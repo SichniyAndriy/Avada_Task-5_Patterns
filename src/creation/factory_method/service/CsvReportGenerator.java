@@ -4,9 +4,7 @@ import creation.factory_method.model.CsvReport;
 import creation.factory_method.model.ErrorReport;
 import creation.factory_method.model.Report;
 import java.time.LocalDateTime;
-import lombok.AllArgsConstructor;
 
-@AllArgsConstructor
 public class CsvReportGenerator extends AbstractReportGenerator {
     @Override
     public Report generate(String text) {
