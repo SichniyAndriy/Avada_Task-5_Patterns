@@ -6,6 +6,10 @@ import creation.abstract_factory.service.WhirlpoolFactory;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+* Pattern Abstract factory provides interface for creation
+* family of related or interdependent objects
+*/
 public class Main {
     public static void main(String[] args) {
         List<Client> clients = new ArrayList<>();
@@ -16,10 +20,10 @@ public class Main {
         clients.add(samsungClient);
         clients.add(siemensClient);
         clients.add(whirlpoolClient);
-        for (Client client: clients) {
+        clients.forEach(client -> {
             client.makePurchases();
             client.takeAllHome();
             client.testPurchases();
-        }
+        });
     }
 }
