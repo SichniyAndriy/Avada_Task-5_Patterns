@@ -12,25 +12,21 @@ public class AbstractMemory implements Memory {
     protected long capacity;
 
     @Override
-    public boolean load(Program program) {
+    public void load(Program program) {
         if (program != null) {
             AbstractProgram p = (AbstractProgram) program;
             System.out.println(p.getName() + " завантажує дані: " + p.getData());
             System.out.println(p.getData() + " завантажено");
-            return true;
         }
-        return false;
     }
 
     @Override
-    public boolean unload(Program program) {
+    public void unload(Program program) {
         if (program != null) {
             AbstractProgram p = (AbstractProgram) program;
             System.out.println(p.getName() + " вивантажує дані: " + p.getName());
             System.out.println(p.getData() + " вивантажено");
-            return true;
         }
-        return false;
     }
 
 }

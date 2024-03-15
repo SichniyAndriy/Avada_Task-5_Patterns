@@ -3,8 +3,8 @@ package structural.bridge.model.memory;
 import structural.bridge.model.program.Program;
 
 public interface Memory {
-    boolean load(Program data);
+    void load(Program data);
 
-    boolean unload(Program data);
+    void unload(Program data);
 
 }
