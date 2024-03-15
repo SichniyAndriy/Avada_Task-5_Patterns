@@ -8,6 +8,10 @@ import creation.factory_method.service.TxtReportGenerator;
 import java.util.Locale;
 import net.datafaker.Faker;
 
+/*
+* Pattern Factory method provides interface for object creation in super class,
+* but also it allows creates other types in subclasses
+*/
 public class Main {
     private static final Faker faker = new Faker(Locale.getDefault());
 
