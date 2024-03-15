@@ -10,20 +10,12 @@ public class AbstractDrive implements Drive {
     protected long capacity;
 
     @Override
-    public boolean read(String data) {
+    public void read() {
         System.out.println("Читаю дані з диска");
-        return true;
     }
 
     @Override
-    public boolean write(String data) {
+    public void write() {
         System.out.println("Записую дані на диск");
-        return true;
-    }
-
-    @Override
-    public boolean delete(String data) {
-        System.out.println("видаляю дані з диска");
-        return true;
     }
 }
