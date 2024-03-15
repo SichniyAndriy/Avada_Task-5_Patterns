@@ -3,7 +3,6 @@ package structural.bridge.model;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 import structural.bridge.model.drive.Drive;
 import structural.bridge.model.memory.Memory;
@@ -12,14 +11,13 @@ import structural.bridge.model.program.AbstractProgram;
 import structural.bridge.model.program.Program;
 import structural.bridge.model.videocard.VideoCard;
 
-@Getter
 @NoArgsConstructor
 public class RealComputer implements Computer {
     protected Processor processor;
     protected Memory memory;
     protected Drive drive;
     protected VideoCard videoCard;
-    protected List<Program> programs = new ArrayList<>();
+    public final List<Program> programs = new ArrayList<>();
 
     @Override
     public void turnOn() {
@@ -47,11 +45,11 @@ public class RealComputer implements Computer {
         AbstractProgram currentProgram = (AbstractProgram) program;
         processor.execute(currentProgram);
         memory.load(currentProgram);
-        drive.read(currentProgram.getData());
+        drive.read();
         videoCard.drawGraphic();
-        drive.write(currentProgram.getData());
+        drive.write();
         videoCard.drawGraphic();
-        drive.write(currentProgram.getData());
+        drive.write();
         videoCard.drawGraphic();
         memory.unload(currentProgram);
         close(currentProgram.getName());
