@@ -1,6 +1,5 @@
 package creation.prototype.model;
 
-import java.util.ArrayList;
 import java.util.List;
 import lombok.AllArgsConstructor;
 
@@ -13,7 +12,7 @@ public abstract class Unit implements UnitPrototype {
     protected Unit(Unit unit) {
         this.weapon = unit.weapon;
         this.pointOfLife = unit.pointOfLife;
-        this.equipment = new ArrayList<>(unit.equipment);
+        this.equipment = List.copyOf(unit.equipment);
     }
 
     @Override
