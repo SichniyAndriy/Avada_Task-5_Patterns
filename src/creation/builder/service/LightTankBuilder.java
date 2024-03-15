@@ -15,50 +15,50 @@ public class LightTankBuilder implements TankBuilder {
     }
 
     @Override
-    public LightTankBuilder setIdAndName() {
+    public TankBuilder setIdAndName() {
         tank.setId(UUID.randomUUID().toString());
         tank.setName(NAME);
         return this;
     }
 
     @Override
-    public LightTankBuilder setWeight() {
+    public TankBuilder setWeight() {
         tank.setWeight(new Faker().random().nextInt(5, 20));
         return this;
     }
 
     @Override
-    public LightTankBuilder buildBase() {
+    public TankBuilder buildBase() {
         tank.setBase(BASE + TEXT);
         return this;
     }
 
     @Override
-    public LightTankBuilder buildChassis() {
+    public TankBuilder buildChassis() {
         tank.setChassis(CHASSIS + TEXT);
         return this;
     }
 
     @Override
-    public LightTankBuilder buildEngine() {
+    public TankBuilder buildEngine() {
         tank.setEngine(ENGINE + TEXT);
         return this;
     }
 
     @Override
-    public LightTankBuilder buildTower() {
+    public TankBuilder buildTower() {
         tank.setTower(TOWER + TEXT);
         return this;
     }
 
     @Override
-    public LightTankBuilder setGun() {
+    public TankBuilder setGun() {
         tank.setGun(GUN + TEXT);
         return this;
     }
 
     @Override
-    public LightTankBuilder setMachineGun() {
+    public TankBuilder setMachineGun() {
         tank.setMachineGun(MACHINE_GUM + TEXT);
         return this;
     }

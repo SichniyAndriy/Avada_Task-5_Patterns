@@ -29,5 +29,4 @@ public interface TankBuilder {
     TankBuilder setMachineGun();
 
     Tank build();
-
 }

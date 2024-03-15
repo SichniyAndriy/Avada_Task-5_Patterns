@@ -15,50 +15,50 @@ public class HeavyTankBuilder implements TankBuilder {
     }
 
     @Override
-    public HeavyTankBuilder setIdAndName() {
+    public TankBuilder setIdAndName() {
         tank.setId(UUID.randomUUID().toString());
         tank.setName(NAME);
         return this;
     }
 
     @Override
-    public HeavyTankBuilder setWeight() {
+    public TankBuilder setWeight() {
         tank.setWeight(new Faker().random().nextInt(41, 60));
         return this;
     }
 
     @Override
-    public HeavyTankBuilder buildBase() {
+    public TankBuilder buildBase() {
         tank.setBase(BASE + TEXT);
         return this;
     }
 
     @Override
-    public HeavyTankBuilder buildChassis() {
+    public TankBuilder buildChassis() {
         tank.setChassis(CHASSIS + TEXT);
         return this;
     }
 
     @Override
-    public HeavyTankBuilder buildEngine() {
+    public TankBuilder buildEngine() {
         tank.setEngine(ENGINE + TEXT);
         return this;
     }
 
     @Override
-    public HeavyTankBuilder buildTower() {
+    public TankBuilder buildTower() {
         tank.setTower(TOWER + TEXT);
         return this;
     }
 
     @Override
-    public HeavyTankBuilder setGun() {
+    public TankBuilder setGun() {
         tank.setGun(GUN + TEXT);
         return this;
     }
 
     @Override
-    public HeavyTankBuilder setMachineGun() {
+    public TankBuilder setMachineGun() {
         tank.setMachineGun(MACHINE_GUM + TEXT);
         return this;
     }

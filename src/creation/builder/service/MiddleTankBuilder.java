@@ -15,50 +15,50 @@ public class MiddleTankBuilder implements TankBuilder {
     }
 
     @Override
-    public MiddleTankBuilder setIdAndName() {
+    public TankBuilder setIdAndName() {
         tank.setId(UUID.randomUUID().toString());
         tank.setName(NAME);
         return this;
     }
 
     @Override
-    public MiddleTankBuilder setWeight() {
+    public TankBuilder setWeight() {
         tank.setWeight(new Faker().random().nextInt(21, 40));
         return this;
     }
 
     @Override
-    public MiddleTankBuilder buildBase() {
+    public TankBuilder buildBase() {
         tank.setBase(BASE + TEXT);
         return this;
     }
 
     @Override
-    public MiddleTankBuilder buildChassis() {
+    public TankBuilder buildChassis() {
         tank.setChassis(CHASSIS + TEXT);
         return this;
     }
 
     @Override
-    public MiddleTankBuilder buildEngine() {
+    public TankBuilder buildEngine() {
         tank.setEngine(ENGINE + TEXT);
         return this;
     }
 
     @Override
-    public MiddleTankBuilder buildTower() {
+    public TankBuilder buildTower() {
         tank.setTower(TOWER + TEXT);
         return this;
     }
 
     @Override
-    public MiddleTankBuilder setGun() {
+    public TankBuilder setGun() {
         tank.setGun(GUN + TEXT);
         return this;
     }
 
     @Override
-    public MiddleTankBuilder setMachineGun() {
+    public TankBuilder setMachineGun() {
         tank.setMachineGun(MACHINE_GUM + TEXT);
         return this;
     }
