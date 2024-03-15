@@ -24,7 +24,7 @@ public class AbstractMemory implements Memory {
     public void unload(Program program) {
         if (program != null) {
             AbstractProgram p = (AbstractProgram) program;
-            System.out.println(p.getName() + " вивантажує дані: " + p.getName());
+            System.out.println(p.getName() + " вивантажує дані: " + p.getData());
             System.out.println(p.getData() + " вивантажено");
         }
     }
