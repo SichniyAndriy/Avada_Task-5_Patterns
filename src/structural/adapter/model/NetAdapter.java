@@ -2,7 +2,9 @@ package structural.adapter.model;
 
 import java.util.Arrays;
 import lombok.AllArgsConstructor;
+import lombok.Setter;
 
+@Setter
 @AllArgsConstructor
 public class NetAdapter implements Channel{
     private Cable cable;
@@ -52,7 +54,7 @@ public class NetAdapter implements Channel{
 
     private void hold() {
         try {
-            Thread.sleep(10);
+            Thread.sleep(50);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
