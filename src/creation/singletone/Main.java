@@ -4,6 +4,10 @@ import creation.singletone.model.User;
 import java.util.Locale;
 import net.datafaker.Faker;
 
+/*
+ * Pattern Singleton ensure that object will have only one instance
+ * and provide a global access point to this instance
+ */
 public class Main {
     public static void main(String[] args) {
         Faker faker = new Faker(Locale.getDefault());
