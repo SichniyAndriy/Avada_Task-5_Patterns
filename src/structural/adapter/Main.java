@@ -4,6 +4,9 @@ import java.util.Random;
 import structural.adapter.model.NetAdapter;
 import structural.adapter.model.RealCable;
 
+/*
+* Pattern Adapter allows  two objects with different interfaces to collaborate
+*/
 public class Main {
     private final static int PACKET_SIZE = 32;
     private final static int PACKET_AMOUNT = 4;
