@@ -3,6 +3,10 @@ package structural.proxy;
 import structural.proxy.model.File;
 import structural.proxy.model.RealFileProxy;
 
+/*
+* Pattern Proxy provides substitute for original object that control
+* access to it
+*/
 public class Main {
     public static void main(String[] args) {
         File file1 = new RealFileProxy("filename1");
