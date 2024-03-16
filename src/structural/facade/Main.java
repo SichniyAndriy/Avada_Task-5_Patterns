@@ -5,6 +5,9 @@ import java.util.Locale;
 import net.datafaker.Faker;
 import structural.facade.model.RealOnlineStore;
 
+/*
+* Pattern facade simplified access to complex sets of libraries or frameworks
+*/
 public class Main {
     private final static Faker faker = new Faker(Locale.getDefault());
 
