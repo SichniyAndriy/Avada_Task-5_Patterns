@@ -12,6 +12,11 @@ import structural.bridge.model.program.GraphicEditor;
 import structural.bridge.model.program.TextEditor;
 import structural.bridge.model.videocard.NVidiaGraphicCard;
 
+/*
+* Pattern Bridge divides abstraction from implementation and allow
+* to evolve separately. It transforms inheritance to aggregation or
+* composition
+*/
 public class Main {
     private final static Faker faker = new Faker();
     public static void main(String[] args) {
