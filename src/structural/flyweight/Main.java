@@ -4,6 +4,10 @@ import java.util.Random;
 import structural.flyweight.model.Symbol;
 import structural.flyweight.util.SymbolsPool;
 
+/*
+* Pattern Flyweight reduce consumption of resources by sharing
+* of common parties instead keeping all data in each of them
+*/
 public class Main {
     private final static Random random = new Random();
 
