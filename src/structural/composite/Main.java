@@ -2,6 +2,10 @@ package structural.composite;
 
 import structural.composite.model.MenuList;
 
+/*
+* Pattern Composite lets compose objects in tree and work with
+* it like one component
+*/
 public class Main {
 
     public static void main(String[] args) {
