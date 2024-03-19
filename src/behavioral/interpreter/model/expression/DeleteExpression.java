@@ -3,7 +3,7 @@ package behavioral.interpreter.model.expression;
 import behavioral.interpreter.model.Context;
 
 public class DeleteExpression extends TerminalExpression {
-    private Integer firstNum;
+    private final Integer firstNum;
     private Integer secondNum;
 
     public DeleteExpression(Context context, Integer n) {

@@ -38,7 +38,7 @@ public class Context {
     public String delete(Integer n) {
         Person person = database.get(n);
         if (person != null) {
-            return person.toString() + " видалено";
+            return person + " видалено";
         }
         return "No result";
     }
