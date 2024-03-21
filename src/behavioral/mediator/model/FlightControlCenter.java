@@ -1,7 +1,5 @@
 package behavioral.mediator.model;
 
-import behavioral.mediator.model.Plane;
-
 public interface FlightControlCenter {
     void add(Plane plane);
 
