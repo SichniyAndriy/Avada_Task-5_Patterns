@@ -4,6 +4,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
 import java.util.List;
 import lombok.NoArgsConstructor;
+import org.apache.log4j.Logger;
 
 @NoArgsConstructor
 public class GameCaretaker {
@@ -18,7 +19,7 @@ public class GameCaretaker {
         try {
             memento = saves.get(x - 1);
         } catch (IndexOutOfBoundsException e) {
-            e.printStackTrace();
+            Logger.getLogger("").error(e);
         }
         return memento;
     }

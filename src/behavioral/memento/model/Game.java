@@ -20,11 +20,15 @@ public class Game {
     }
 
     public GameStateMemento save() {
+        System.out.println("Game saved");
         return new GameStateMemento(level, score);
     }
 
     public void restore(GameStateMemento memento) {
-        level = memento.level();
-        score = memento.score();
+        if (memento != null) {
+            level = memento.level();
+            score = memento.score();
+            System.out.println("Save loaded");
+        }
     }
 }
