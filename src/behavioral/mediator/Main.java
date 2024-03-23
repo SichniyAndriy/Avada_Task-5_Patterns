@@ -6,6 +6,9 @@ import behavioral.mediator.model.Plane;
 import java.util.Locale;
 import net.datafaker.Faker;
 
+/*
+* Pattern Mediator lets reduce dependencies between object
+*/
 public class Main {
     public final static Faker faker = new Faker(Locale.getDefault());
 

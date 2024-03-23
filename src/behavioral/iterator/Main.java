@@ -8,6 +8,10 @@ import java.time.LocalDateTime;
 import java.util.Locale;
 import net.datafaker.Faker;
 
+/*
+* Pattern Interpreter lets walkthrough collection without
+* exposing underlying representation
+*/
 public class Main {
     public final static Faker faker = new Faker(Locale.getDefault());
 

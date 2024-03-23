@@ -6,6 +6,10 @@ import behavioral.chain_of_responsibility.model.DrivingSection;
 import behavioral.chain_of_responsibility.model.HuntingSection;
 import behavioral.chain_of_responsibility.model.PassportSection;
 
+/*
+* Patter Chain Of Responsibility lets pass request to chain of handlers.
+* Each handler can decide perform it or not. Could be multiply performance
+*/
 public class Main {
     public static void main(String[] args) {
         Cnap cnap = new Cnap();

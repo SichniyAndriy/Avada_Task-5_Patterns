@@ -5,6 +5,9 @@ import behavioral.memento.model.GameCaretaker;
 import java.util.Locale;
 import net.datafaker.Faker;
 
+/*
+* Pattern Memento responsible for sava and restore state
+*/
 public class Main {
     public static Faker faker = new Faker(Locale.getDefault());
 

@@ -7,6 +7,10 @@ import behavioral.visitor.model.car.Body;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+* Pattern Visitor separate logic operating on the object
+* from the object it self
+*/
 public class Main {
     public static void main(String[] args) {
         List<AbstractCarElement> components = new ArrayList<>();

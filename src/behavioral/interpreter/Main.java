@@ -6,6 +6,10 @@ import behavioral.interpreter.model.expression.CreateExpression;
 import behavioral.interpreter.model.expression.DeleteExpression;
 import behavioral.interpreter.model.expression.ReadExpression;
 
+/*
+* Pattern Interpreter can interpret new grammar expressions.
+* Its represent grammar like object
+*/
 public class Main {
     public static void main(String[] args) {
         Context context = new Context();

@@ -5,6 +5,10 @@ import behavioral.observer.model.Server;
 import java.util.Locale;
 import net.datafaker.Faker;
 
+/*
+* Pattern Observer implements subscription mechanism to notify
+*  a lot of object about changes in observable
+*/
 public class Main {
     public static final Faker faker = new Faker(Locale.getDefault());
 
