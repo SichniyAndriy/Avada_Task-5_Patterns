@@ -9,7 +9,7 @@ import java.util.List;
 
 /*
 * Pattern Visitor separate logic operating on the object
-* from the object it self
+* from the object itself
 */
 public class Main {
     public static void main(String[] args) {
